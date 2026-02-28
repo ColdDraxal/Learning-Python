@@ -55,7 +55,7 @@ print(is_pali(wordd))
     
 """
 # Print all subsets of a string (power set)
-
+"""
 def subsets(s, i=0, current=""):
     if i == len(s):
         print(current)
@@ -65,3 +65,5 @@ def subsets(s, i=0, current=""):
     subsets(s, i+1, current + s[i])   # include character
 
 subsets("ab")
+
+"""
