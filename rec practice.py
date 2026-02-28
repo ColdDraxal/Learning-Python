@@ -63,9 +63,20 @@ print(count(1234))
 
 """
 #  reversing a number
-
+"""
 def rev(x,i=0):
-    if x<10:
+    if x==0:
         return i
-    return rev(x//10,i+x//10)
+    return rev(x//10,x%10+i*10)
 print(rev(1234))
+"""
+# subsets of a string
+
+def subsets(x,i=0,c=""):
+    if i==len(x):
+        print(c)
+        return
+    subsets(x,i+1,c)
+    subsets(x,i+1,c+x[i])
+word=input("Enter a word: ")
+subsets(word)
