@@ -7,6 +7,6 @@ for index,item in enumerate(f1):
     
 """
 
-f1=["Draxal","Darpan","Miya","Aamon"]
-for index,item in enumerate(f1):
-    print(index+1,item)
+# f1=["Draxal","Darpan","Miya","Aamon"]
+# for index,item in enumerate(f1):
+#     print(index+1,item)

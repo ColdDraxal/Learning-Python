@@ -1,2 +1,3 @@
- d:
-    d.write("Thikai xa ni\n")
+al")
+# b=", ".join(a)
+# print(b)
