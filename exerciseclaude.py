@@ -156,3 +156,71 @@
 #=================================Decorators====================================
 
 
+# def shout(func):
+#     def wrapper(*args,**kwargs):
+#         result=func(*args,**kwargs)
+#         return result.upper()
+#     return wrapper
+
+# @shout
+# def greet():
+#     return "Hello World"
+# print(greet())
+
+
+
+# def excitement(func):
+#     def wrapper(*args,**kwargs):
+#         result=func(*args,**kwargs)
+#         return result + "!!!"
+#     return wrapper
+# @excitement
+# def words(a):
+#     return a
+# info=input("Enter a word: ")
+# print(words(info))
+
+
+# def logger(func):
+#     def wrapper(*args):
+#         print(f"Calling function: {func.__name__}")
+#         result=func(*args)
+#         return result
+#     return wrapper
+
+# @logger
+# def plus(a,b):
+#     return a+b
+# print(plus(6,5))
+
+
+# def repeat(func):
+#     def wrapper(*args):
+#         for i in range(3):
+#             print(func(*args))
+#         return i
+#     return wrapper
+
+# @repeat
+# def greet():
+#     return "Hello Darpan"
+# greet()
+
+
+
+#============================Topic 10—Combined: map + filter + reduce======================
+
+from functools import reduce
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+even=lambda x:x%2==0
+square1=lambda x:x*x
+plus=lambda x,y:x+y
+
+evens=list(filter(even,numbers))
+square2=list(map(square1,evens))
+
+print(evens)
+print(square2)
+print(reduce(plus,square2))
