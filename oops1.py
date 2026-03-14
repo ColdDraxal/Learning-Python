@@ -15,3 +15,5 @@ stud2.age=35
 
 stud1.show_details()
 stud2.show_details()
+stud1.Holiday_leaves=8
+print(stud1.__dict__)

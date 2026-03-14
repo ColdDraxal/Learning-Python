@@ -1,2 +1,2 @@
 
-#     print(f"{index+1}){item} --> {scores[index]}")
+# s2=College("Willson Banjade",0.6,"Not Started")
