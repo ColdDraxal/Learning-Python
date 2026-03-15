@@ -14,5 +14,6 @@ class College:
 
 s1=College("Darpan",21,10)
 s1.change_clg("Lumbini City")
+# print(s1.college_name)
+College.change_clg("Butal Multiple Campus")
 print(s1.college_name)
-
