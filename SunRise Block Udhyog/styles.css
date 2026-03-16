@@ -361,15 +361,15 @@ a{color:inherit; text-decoration:none}
   gap:10px;
   padding: 12px 14px;
   border-radius: 999px;
-  border:1px solid rgba(255,106,0,.35);
-  background: rgba(255,255,255,.92);
+  border:1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(17, 197, 53, 0.92);
   backdrop-filter: blur(10px);
-  box-shadow: 0 16px 32px rgba(11,15,20,.18);
+  box-shadow: 0 16px 32px rgba(255, 255, 255, 0.15);
   transition: transform .15s ease, background .15s ease;
 }
-.fab:hover{transform: translateY(-1px); background: rgba(255,255,255,.98)}
-.fab__dot{width:10px; height:10px; border-radius:999px; background: var(--orange); box-shadow: 0 0 0 6px rgba(255,106,0,.12)}
-.fab__text{font-weight:700; font-size:13px}
+.fab:hover{transform: translateY(-1px); background: rgba(17, 197, 53, 0.92)}
+.fab__dot{width:10px; height:10px; border-radius:999px; background: #ffffff; box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.15)}
+.fab__text{font-weight:700; font-size:13px;color: #ffffff}
 
 .reveal{
   opacity:0;
@@ -396,4 +396,27 @@ a{color:inherit; text-decoration:none}
   html{scroll-behavior:auto}
   .reveal{opacity:1; transform:none; transition:none}
   .chip, .fab, .nav__link{transition:none}
+}
+/* Custom styling for the Facebook bubble */
+.fab--fb {
+  bottom: 80px !important; /* This moves it above the WhatsApp bubble */
+  background: #1877F2 !important; /* Facebook Blue */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Makes the text white so it's readable on the blue background */
+.fab--fb .fab__text {
+  color: #ffffff !important;
+}
+
+/* Changes the dot color to white for Facebook */
+.fab__dot--fb {
+  background: #ffffff !important;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Hover effect for the Facebook bubble */
+.fab--fb:hover {
+  background: #166fe5 !important;
+  transform: translateY(-1px);
 }
