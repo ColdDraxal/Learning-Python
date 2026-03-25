@@ -137,7 +137,7 @@ class Person:
         self.name=name
         self.age=age
     def info(self):
-        return f"Name:{self.name}\nAge:{self.age}\nSchool:{self._school}"
+        return f"Name:{self.name}\nAge:{self.age}\nSchool:{Person._school}"
 class Teacher(Person):
     def __init__(self, name, age,subject):
         super().__init__(name, age)
@@ -149,7 +149,7 @@ class Student(Person):
         super().__init__(name, age)
         self.grade=grade
     def info(self):
-        return f"{super().info()}\nGrade={self.grade}"
+        return f"{super().info()}\nGrade:{self.grade}"
     
 persons=[Student("Darpan",22,12),Teacher("Draxal",35,"Python"),Person("Miya",23)]
 for i in persons:
